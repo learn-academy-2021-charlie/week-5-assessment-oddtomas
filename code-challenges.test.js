@@ -98,26 +98,24 @@ describe("fullHouse", () => {
       })
 
 // b) Create the function that makes the test pass.
+//create a function that takes an array
 const fullHouse = (arr) => {
+    //assign an empty object
     let countObj = {}
+    //iterate through the object with the elements of the array
     for(let x of arr){
-      countObj[x] = (countObj[x] || 0) + 1;
+      countObj[x] = (countObj[x] || 0) + 1; //count each occurrance of the element of the array using object mapping. 
+/* { '5': 1 }
+{ '5': 2 }
+{ '5': 3 }
+{ '3': 1, '5': 3 }
+{ '3': 2, '5': 3 } */
     }
+    // assign a variable equal to the actual count of each element
     let vals = Object.values(countObj);
-    if((vals[0] === 2 && vals[1] === 3) || (vals[1] === 2 && vals[0] === 3)){
+    if((vals[0] === 2 && vals[1] === 3) || (vals[1] === 2 && vals[0] === 3)){ //if theres a combination of counts equal to 2 & 3 there is a full house and return true 
       return true;
     }
-    return false;
+    return false; //else return false
   }
-  
-  //To check two pairs
-  const twoPairs = arr => {
-    let countObj = {}
-    for(let x of arr){
-      countObj[x] = (countObj[x] || 0) + 1;
-    }
-    let vals = Object.values(countObj);
-    //console.log(vals);
-    if(vals.filter(x => x === 2).length == 2) return true;
-    return false;
-  }
+
