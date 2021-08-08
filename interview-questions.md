@@ -23,7 +23,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 3. What is object-relational mapping?
 
-  Your answer: ORM is a tool for writing SQL queries using Rails.
+  Your answer: ORM is a tool for writing SQL queries using Rails.Active Record is an example of an ORM, and it helps us intereact with database data. 
 
   Researched answer: ORM is a programming technique for convertin data between incompatible systems. ORM allows developers to wrtie SQL queries using Rails, an example is Active Record which takes data which is stored in a database table and allows interaction with the data as if it was Ruby object. ORM in effect creates a "virtual object database". 
 
@@ -31,7 +31,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 4. What is a gem?
 
-  Your answer: A gem is an extension to the programming language Ruby. 
+  Your answer: A gem is an extension to the programming language Ruby. Gems are packages that can be installed to expand functionality. 
 
   Researched answer:
 Gems are plugins or extensions to Ruby, in this context even Rails can be considered as nothing more than a gem. Inside of a Rails there is a Gemfile, where you add gems you want tot include and use. Gems are installed via the 
