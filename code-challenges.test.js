@@ -80,13 +80,44 @@ return result
 
 // a) Create a test with an expect statement using the variable provided.
 
-var hand1 = [5, 5, 5, 3, 3]
-// Expected output: true
-var hand2 = [5, 5, 3, 3, 4]
-// Expected output: false
-var hand3 = [5, 5, 5, 5, 4]
-// Expected output: false
 
 
+describe("fullHouse", () => {
+    var hand1 = [5, 5, 5, 3, 3]
+    // Expected output: true
+    var hand2 = [5, 5, 3, 3, 4]
+    // Expected output: false
+    var hand3 = [5, 5, 5, 5, 4]
+    // Expected output: false
+        it("takes in an array of 5 numbers and determines whether or not the array is a “full house", () => {
+          expect(fullHouse(hand1)).toEqual(true)
+          expect(fullHouse(hand2)).toEqual(false) 
+          expect(fullHouse(hand3)).toEqual(false)  
+ 
+        })
+      })
 
 // b) Create the function that makes the test pass.
+const fullHouse = (arr) => {
+    let countObj = {}
+    for(let x of arr){
+      countObj[x] = (countObj[x] || 0) + 1;
+    }
+    let vals = Object.values(countObj);
+    if((vals[0] === 2 && vals[1] === 3) || (vals[1] === 2 && vals[0] === 3)){
+      return true;
+    }
+    return false;
+  }
+  
+  //To check two pairs
+  const twoPairs = arr => {
+    let countObj = {}
+    for(let x of arr){
+      countObj[x] = (countObj[x] || 0) + 1;
+    }
+    let vals = Object.values(countObj);
+    //console.log(vals);
+    if(vals.filter(x => x === 2).length == 2) return true;
+    return false;
+  }
