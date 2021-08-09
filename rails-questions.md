@@ -10,7 +10,7 @@ The SELECT statement in a query would be used along with the * symbole to return
 The command to create just a new Rails application using postgesql would be " rails new app_name -d postgresql -T ".
 
 4. What is the command to generate a Rails model for a meals table with columns named breakfast, lunch, and dinner?
-The command to generate this Rails model would be "rails generate model Meals breakfast:string lunch:string dinner:integer ".
+The command to generate this Rails model would be "rails generate model Meal breakfast:string lunch:string dinner:string ".
 
 
 5. What is a migration? Why would you use one?
