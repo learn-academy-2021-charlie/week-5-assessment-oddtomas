@@ -18,7 +18,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
   Your answer: Relational databases are databases like excel where there are rows and columns structure with associated values. These databases store and provide access to data that is related to eachother. 
 
   Researched answer: Relational databases store information in tables consisting of rows and columns. A table is one set of rows and clumns and a database can have many different tables that have relationships to each other. The schema is a description of the layout of all the tables, and name and data types of eah column in a database. In a relational database each row is a record with a unique ID key, and each column holds attributes of the data, and each record usually has a value for each attribute making it easy to establish relationships among data points. 
-
+  There is also a non-relational database, which is a database that does not use the tabular schema of rows and columns. Non-relational databases use a storage model that is optimized for the specific requirements of the type of data being stored.
 
 
 3. What is object-relational mapping?
