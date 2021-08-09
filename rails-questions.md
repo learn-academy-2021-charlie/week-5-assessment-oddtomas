@@ -30,4 +30,4 @@ The schema file in a Rails application is the "shape" of the database; the colum
 The Rails console is our way to interat directly with Active Record, there we can create variables and instances that only exist within the context of that console session.
 
 10. What is the Rails console command to see all the content in a particular table?
-The console command to see all the content in a table would be ".all" on whatever the class is you are trying to see into. The ".all" command is the same as the SQL query of "SELECT *".
+The console command to see all the content in a table would be ".all" on whatever the class is you are trying to see into. The ".all" command would be like TableName.all  .
