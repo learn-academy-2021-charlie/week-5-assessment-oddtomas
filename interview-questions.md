@@ -48,7 +48,7 @@ Primary keys are ids that are automatically added by Rails to each entry. Primar
 ## Looking Ahead: Terms for Next Week
 Research and define the following terms to the best of your ability.
 
-1. RESTful routes: Rails follows a RESTful pattern for interactions between the client and server. REST stands for Representational State Transfer, and RESTfyk riytes attempt to bring the operations that can be applied to an object into HTTP requests. Rails routes follow two basic structures, without params or with params. (http verb, url request, param/no param, name of controller, name of controller method)
+1. RESTful routes: Rails follows a RESTful pattern for interactions between the client and server. REST stands for Representational State Transfer, and RESTful routes attempt to bring the operations that can be applied to an object into HTTP requests. Rails routes follow two basic structures, without params or with params. (http verb, url request, param/no param, name of controller, name of controller method)
 //get '/photos' => 'photos#index'
 //delete '/photos/:id' => 'photos#destroy'
 
